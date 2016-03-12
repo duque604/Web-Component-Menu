@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="menu.js"></script>
+    <title></title>
+</head>
+<body onselectstart='return false'>
+
+
+<x-menu id="menu"></x-menu>
+<script>
+    var a = document.getElementById("menu");
+    a.crearmenu(3);
+    a.descripcion(0,"Archivo");
+    a.descripcion(1,"Edicion");
+    a.descripcion(2,"Ayuda");
+    a.crearv(0,3);
+    a.agregardescripcion(0,0,"Abrir","img/carpeta.png");
+    a.agregardescripcion(0,1,"Guardar","img/guardar.png");
+    a.agregardescripcion(0,2,"Imprimir","img/impresora.png");
+    a.crearv(1,3);
+    a.agregardescripcion(1,0,"Copiar","img/copiar.png");
+    a.agregardescripcion(1,1,"Pegar","img/pegar.png");
+    a.agregardescripcion(1,2,"Cortar","img/cortar.png");
+    a.crearv(2,1);
+    a.agregardescripcion(2,0,"Ayuda","img/ayuda.png");
+    a.agregarsubmenu(0,2,2);
+    a.agregardescripcion2(0,2,0,"Impresora");
+    a.agregardescripcion2(0,2,1,"Como PDF");
+</script>
+</body>
+</html>
